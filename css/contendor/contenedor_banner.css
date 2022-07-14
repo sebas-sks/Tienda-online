@@ -1,0 +1,35 @@
+.contenedor__banner {        
+    background: url("../../assets/img/geeky-shots-hQ4BQ3wdHsQ-unsplash_m.jpg") center / contain no-repeat;          
+    color: #fdfdfd;
+    display: flex;    
+    flex-direction: column;    
+    height: 13.2rem;    
+    width: 100%;    
+}
+
+.contenedor__titulo {
+    margin: 80px 20px 0 20px;    
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contenedor__descripcion {    
+    margin: 2px 20px;    
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contendor__boton-ver {
+    background: #2A7AE4;
+    border: none;
+    color: #fdfdfd;
+    margin: 2px 20px;    
+    font-size: 16px;
+    font-weight: 600;
+    height: 45px;
+    width: 130px;    
+}
+
+.menu__lupa {
+    color: var(--color-titulos);
+}

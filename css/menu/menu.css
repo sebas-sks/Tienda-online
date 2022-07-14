@@ -1,0 +1,31 @@
+.menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1.75rem 0;
+}
+
+.menu__logo {
+    width: 7rem;
+    height: auto;
+}
+
+.menu__busqueda {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.menu__boton-login {
+    background-color: #fdfdfd;
+    border: 1px solid #2A7AE4;
+    font-weight: 600;
+    height: 2.5rem;
+    color: #2A7AE4;        
+    width: 140px;
+}
+
+.menu__lupa {
+    color: #000000;
+}

@@ -1,0 +1,13 @@
+:root{
+
+    --color-titulos: #464646;
+    --color-letra-1: #fdfdfd;    
+    --color-background-azul: #2A7AE4;
+    --color-background-azulClaro: #EAF2FD;
+    --tipo-letra: 'Raleway', sans-serif;
+
+}
+
+body {
+    font-family:var(--tipo-letra);
+}
