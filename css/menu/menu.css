@@ -29,3 +29,36 @@
 .menu__lupa {
     color: #000000;
 }
+
+
+@media screen and (min-width: 768px) {        
+
+    .menu__busqueda {
+        flex-direction: row-reverse;
+    }
+
+    .menu__buscador {
+        display: block;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--color-background-gris);
+        color: #565454;
+        font-weight: 400;
+        height: 2rem;
+        padding-left: 10px;
+        width: 200px;        
+    }
+    
+    .menu__lupa {
+        display: none;
+    }    
+}
+
+@media screen and (min-width: 1200px) {        
+  
+    .menu__buscador {        
+        width: 300px;        
+    }    
+    
+}

@@ -1,8 +1,9 @@
 .contenedor__banner {        
-    background: url("../../assets/img/geeky-shots-hQ4BQ3wdHsQ-unsplash_m.jpg") center / contain no-repeat;          
+    background: url("../../assets/img/geeky-shots-hQ4BQ3wdHsQ-unsplash_m.jpg") center / cover no-repeat;          
     color: #fdfdfd;
     display: flex;    
     flex-direction: column;    
+    line-height: 2rem;
     height: 13.2rem;    
     width: 100%;    
 }
@@ -32,4 +33,23 @@
 
 .menu__lupa {
     color: var(--color-titulos);
+}
+
+
+
+@media screen and (min-width: 768px) {        
+    .contenedor__banner {        
+        background: url("../../assets/img/geeky-shots-hQ4BQ3wdHsQ-unsplash_m.jpg") center / cover no-repeat;                  
+        height: 300px;
+    }        
+
+    .contenedor__titulo {
+        margin-top: 150px;          
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .contenedor__titulo, .contenedor__descripcion, .contendor__boton-ver {
+        margin-left: 100px;
+    }
 }

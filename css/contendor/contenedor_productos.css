@@ -3,10 +3,14 @@
     width: 100%;    
 }
 
-.contenedor__productos-item {
-    display: flex;
-    flex-wrap: wrap;
+.contenedor__productos-item {    
+    width: 100%;
     padding: 1.25rem .75rem;
+}
+
+.contenedor__productos-starWars, .contenedor__productos-consolas, .contenedor__productos-diversos {
+    display: flex;
+    flex-wrap: wrap;    
     justify-content: space-between;
     width: 100%;
 }
@@ -19,7 +23,13 @@
     width: 100%;
 }
 
+
+
 .contenedor__producto-item-info {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: .75rem 0;
     line-height: 1.5rem;
     width: 46%;    
@@ -61,3 +71,50 @@
     font-weight: 600;
     text-decoration: none;
 }
+
+.contenedor__productos-starWars .contenedor__producto-item-info:nth-child(3), .contenedor__productos-starWars .contenedor__producto-item-info:nth-child(7) {
+    display: none;
+}
+
+.contenedor__productos-consolas .contenedor__producto-item-info:nth-child(6), .contenedor__productos-consolas .contenedor__producto-item-info:nth-child(7) {
+    display: none;
+}
+
+.contenedor__productos-diversos .contenedor__producto-item-info:nth-child(6), .contenedor__productos-diversos .contenedor__producto-item-info:nth-child(7) {
+    display: none;
+}
+@media screen and (min-width: 768px) {        
+
+    .contenedor__productos-item {
+        justify-content: space-around;
+    }
+
+    .contenedor__producto-item-info {
+        width: 20%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .contenedor__productos-item:nth-child(2) {
+        background-color: red;
+    }
+    
+    .contenedor__productos-starWars .contenedor__producto-item-info:nth-child(3), .contenedor__productos-starWars .contenedor__producto-item-info:nth-child(7) {
+        display: flex;
+    }
+    
+    .contenedor__productos-consolas .contenedor__producto-item-info:nth-child(6), .contenedor__productos-consolas .contenedor__producto-item-info:nth-child(7) {
+        display: flex;
+    }
+    
+    .contenedor__productos-diversos .contenedor__producto-item-info:nth-child(6), .contenedor__productos-diversos .contenedor__producto-item-info:nth-child(7) {
+        display: flex;
+    }
+
+    .contenedor__producto-item-info {
+        width: 15%;
+    }
+}
+

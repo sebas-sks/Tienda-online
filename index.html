@@ -14,13 +14,14 @@
         <link rel="stylesheet" href="css/contendor/contenedor_banner.css">
         <link rel="stylesheet" href="css/contendor/contenedor_productos.css">
         <link rel="stylesheet" href="css/contendor/contenedor_contacto.css">
+        <link rel="stylesheet" href="css/contendor/footer.css">
     </head>
     <body>
         <header class="menu">
             <img src="assets/img/Logo.svg" alt="" class="menu__logo">                        
             <div class="menu__busqueda">                
                 <button class="menu__boton-login">Login</button>
-                <input type="text" class="menu__buscador" hidden>
+                <input type="text" class="menu__buscador" hidden placeholder="¿Qué deseas buscar?  	       &#128269;">
                 <a href="#" class="menu__lupa"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a>                
             </div>                        
         </header>
@@ -31,116 +32,176 @@
                 <button class="contendor__boton-ver">Ver consolas</button>
             </section>
             <section class="contenedor__productos">
-                <div class="contenedor__productos-item"> 
-                    <!--Categoria Star wars-->        
-                    <div class="contenedor__productos-item-categoria">
-                        <h2 class="contenedor__item-titulo">Star Wars</h2>
-                        <a href="#" class="contenedor__productos-item-ver">Ver todo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                    </div>                               
-                    <div class="contenedor__producto-item-info">
-                        <img src="assets/productos/casco-clon.png" alt="" class="productos-item__img-producto">
-                        <span class="productos-item__titulo">PRODUCTO XYZ</span>
-                        <p class="productos-item__precio">R$ 60,00</p>
-                        <a href="#" class="productos-item__ver-producto">Ver producto</a>
-                    </div>                
-                    <div class="contenedor__producto-item-info">
-                        <img src="assets/productos/cascos-sith.png" alt="" class="productos-item__img-producto">
-                        <span class="productos-item__titulo">PRODUCTO XYZ</span>
-                        <p class="productos-item__precio">R$ 60,00</p>
-                        <a href="#" class="productos-item__ver-producto">Ver producto</a>
-                    </div> 
-                    <div class="contenedor__producto-item-info">
-                        <img src="assets/productos/figura-baby-yoda.png" alt="" class="productos-item__img-producto">
-                        <span class="productos-item__titulo">PRODUCTO XYZ</span>
-                        <p class="productos-item__precio">R$ 60,00</p>
-                        <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                <div class="contenedor__productos-item">
+                    <div class="contenedor__productos-starWars">                    
+                        <!--Categoria Star wars-->        
+                        <div class="contenedor__productos-item-categoria">
+                            <h2 class="contenedor__item-titulo">Star Wars</h2>
+                            <a href="#" class="contenedor__productos-item-ver">Ver todo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>                               
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/casco-clon.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>                
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/cascos-sith.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div> 
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/figura-yoda.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>   
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/figura-baby-yoda.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/figura-clon.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>                         
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/kylo.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>   
+                        <!--Fin categoria Star wars-->        
                     </div>
-                    <div class="contenedor__producto-item-info">
-                        <img src="assets/productos/figura-clon.png" alt="" class="productos-item__img-producto">
-                        <span class="productos-item__titulo">PRODUCTO XYZ</span>
-                        <p class="productos-item__precio">R$ 60,00</p>
-                        <a href="#" class="productos-item__ver-producto">Ver producto</a>
-                    </div>     
-                    <!--Fin categoria Star wars-->        
-                    <!--Categoria consolas-->        
-                    <div class="contenedor__productos-item-categoria">
-                        <h2 class="contenedor__item-titulo">Consolas</h2>
-                        <a href="#" class="contenedor__productos-item-ver">Ver todo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                    </div>                               
-                    <div class="contenedor__producto-item-info">
-                        <img src="assets/productos/mando-xbox.png" alt="" class="productos-item__img-producto">
-                        <span class="productos-item__titulo">PRODUCTO XYZ</span>
-                        <p class="productos-item__precio">R$ 60,00</p>
-                        <a href="#" class="productos-item__ver-producto">Ver producto</a>
-                    </div>                
-                    <div class="contenedor__producto-item-info">
-                        <img src="assets/productos/play-station.png" alt="" class="productos-item__img-producto">
-                        <span class="productos-item__titulo">PRODUCTO XYZ</span>
-                        <p class="productos-item__precio">R$ 60,00</p>
-                        <a href="#" class="productos-item__ver-producto">Ver producto</a>
-                    </div> 
-                    <div class="contenedor__producto-item-info">
-                        <img src="assets/productos/consola-nintendo-antigua.png" alt="" class="productos-item__img-producto">
-                        <span class="productos-item__titulo">PRODUCTO XYZ</span>
-                        <p class="productos-item__precio">R$ 60,00</p>
-                        <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                    <div class="contenedor__productos-consolas">
+                        <!--Categoria consolas-->        
+                        <div class="contenedor__productos-item-categoria">
+                            <h2 class="contenedor__item-titulo">Consolas</h2>
+                            <a href="#" class="contenedor__productos-item-ver">Ver todo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>                               
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/mando-xbox.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>                
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/play-station.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div> 
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/consola-nintendo-antigua.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/nintendo-switch.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>                           
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/consola-xbox.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>   
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/consola-gameboy.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>   
+                        <!--Fin categoria Consolas-->
                     </div>
-                    <div class="contenedor__producto-item-info">
-                        <img src="assets/productos/nintendo-switch.png" alt="" class="productos-item__img-producto">
-                        <span class="productos-item__titulo">PRODUCTO XYZ</span>
-                        <p class="productos-item__precio">R$ 60,00</p>
-                        <a href="#" class="productos-item__ver-producto">Ver producto</a>
-                    </div>     
-                    <!--Fin categoria Consolas-->
-                    <!--Categoria diversos-->
-                    <div class="contenedor__productos-item-categoria">
-                        <h2 class="contenedor__item-titulo">Consolas</h2>
-                        <a href="#" class="contenedor__productos-item-ver">Ver todo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-                    </div>                               
-                    <div class="contenedor__producto-item-info">
-                        <img src="assets/productos/camisa-atari.png" alt="" class="productos-item__img-producto">
-                        <span class="productos-item__titulo">PRODUCTO XYZ</span>
-                        <p class="productos-item__precio">R$ 60,00</p>
-                        <a href="#" class="productos-item__ver-producto">Ver producto</a>
-                    </div>                
-                    <div class="contenedor__producto-item-info">
-                        <img src="assets/productos/Camisa-snes.png" alt="" class="productos-item__img-producto">
-                        <span class="productos-item__titulo">PRODUCTO XYZ</span>
-                        <p class="productos-item__precio">R$ 60,00</p>
-                        <a href="#" class="productos-item__ver-producto">Ver producto</a>
-                    </div> 
-                    <div class="contenedor__producto-item-info">
-                        <img src="assets/productos/figura-sonic.png" alt="" class="productos-item__img-producto">
-                        <span class="productos-item__titulo">PRODUCTO XYZ</span>
-                        <p class="productos-item__precio">R$ 60,00</p>
-                        <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                    <div class="contenedor__productos-diversos">
+                        <!--Categoria diversos-->
+                        <div class="contenedor__productos-item-categoria">
+                            <h2 class="contenedor__item-titulo">Consolas</h2>
+                            <a href="#" class="contenedor__productos-item-ver">Ver todo <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>                               
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/camisa-atari.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>                
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/Camisa-snes.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div> 
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/figura-sonic.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/despertador.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>  
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/gafas-vr.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>  
+                        <div class="contenedor__producto-item-info">
+                            <img src="assets/productos/dizfras-picachu.png" alt="" class="productos-item__img-producto">
+                            <span class="productos-item__titulo">PRODUCTO XYZ</span>
+                            <p class="productos-item__precio">R$ 60,00</p>
+                            <a href="#" class="productos-item__ver-producto">Ver producto</a>
+                        </div>  
+
+                        <!--Fin categoria Diversos-->
                     </div>
-                    <div class="contenedor__producto-item-info">
-                        <img src="assets/productos/despertador.png" alt="" class="productos-item__img-producto">
-                        <span class="productos-item__titulo">PRODUCTO XYZ</span>
-                        <p class="productos-item__precio">R$ 60,00</p>
-                        <a href="#" class="productos-item__ver-producto">Ver producto</a>
-                    </div>  
-                    <!--Fin categoria Diversos-->
-                </div>                
-                <!---<div class="contenedor__productos-item">                    
-                    <h2 class="contenedor__item-titulo">Star Wars</h2>
-                    <span class="contenedor__productos-item-ver">Ver todo </span>                                 
-                </div>                -->
+                </div>                                            
             </section>
-            <section>
+            <section class="contacto">
                 <div class="contacto-tienda">
-                    <img src="assets/img/Logo.png" alt="" class="contacto-tienda__logo">
+                    <a href="#"><img src="assets/img/Logo.png" alt="" class="contacto-tienda__logo"></a>
                     <ul class="contacto-tienda__list">
-                        <li class="contacto-tienda__list-item"><a href="" class="contacto-tienda__list-item-link"></a></li>
-                        <li class="contacto-tienda__list-item"><a href="" class="contacto-tienda__list-item-link"></a></li>
-                        <li class="contacto-tienda__list-item"><a href="" class="contacto-tienda__list-item-link"></a></li>
-                        <li class="contacto-tienda__list-item"><a href="" class="contacto-tienda__list-item-link"></a></li>
-                        <li class="contacto-tienda__list-item"><a href="" class="contacto-tienda__list-item-link"></a></li>
-                        <li class="contacto-tienda__list-item"><a href="" class="contacto-tienda__list-item-link"></a></li>
+                        <li class="contacto-tienda__list-item"><a href="#" class="contacto-tienda__list-item-link">Quienes somos</a></li>
+                        <li class="contacto-tienda__list-item"><a href="#" class="contacto-tienda__list-item-link">Política de privacidad</a></li>
+                        <li class="contacto-tienda__list-item"><a href="#" class="contacto-tienda__list-item-link">Programa de fidelidad</a></li>
+                        <li class="contacto-tienda__list-item"><a href="#" class="contacto-tienda__list-item-link">Nuestras tiendas</a></li>
+                        <li class="contacto-tienda__list-item"><a href="#" class="contacto-tienda__list-item-link">Quiero ser franquiciado</a></li>
+                        <li class="contacto-tienda__list-item"><a href="#" class="contacto-tienda__list-item-link">Anúncie Aquí</a></li>
                     </ul>
+                </div>
+                <div class="contacto-form">
+                    <form action="" class="contacto-form__formulario">
+                        <h2 class="contacto-form__titulo">Hable con nosotros</h2>                    
+                        <input type="text" class="contacto-form__text-info" placeholder="Nombre">                        
+                        <input type="text" class="contacto-form__text-info" placeholder="Escribe tu mensaje">
+                        <input type="submit" class="contacto-form__btnEnviar" value="Enviar Mensaje">
+                    </form>
+                </div>
+            </section>
+            <section class="footer">
+                <div class="footer__rodape">
+                    <div class="footer__redes">
+                        <li class="items"><a href="https://github.com/sebas-sks"><i class='fa fa-github'></i></a></li>
+                        <li class="items"><a href="https://www.linkedin.com/in/sebastian-velaco-5977691b1/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </div>     
+                    <div class="footer__info">
+                        <p>Desarrollado por Sebastian Velasco</p>
+                        <p>2022</p>
+                    </div>                           
                 </div>
             </section>
         </main>
+        <script src="js/app.js"></script>
     </body>
 </html>

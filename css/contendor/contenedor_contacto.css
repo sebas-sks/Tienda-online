@@ -1,4 +1,115 @@
-.contacto-tienda {
-    background-color: var(--color-background-azulClaro);
+.contacto {
+    background-color: var(--color-background-azulClaro);     
+    
+}
+
+.contacto-tienda {    
     display: flex;
+    flex-direction: column;
+    padding: 1.75rem 0;
+    line-height: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.contacto-tienda__logo {
+    width: 200px;
+}
+
+.contacto-tienda__list-item-link {
+    color: var(--color-titulos);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.contacto-form {         
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 2rem 0;
+    align-items: center;
+}
+
+.contacto-form__formulario {            
+    display: flex;        
+    flex-direction: column; 
+    justify-content: space-between;               
+    line-height: 1.5rem; 
+    width: 92%;
+    
+}
+
+.contacto-form__titulo {
+    color: var(--color-titulos);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contacto-form__text-info {                
+    border: none;
+    border-radius: 5px;    
+    border-bottom: 1px solid var(--color-background-azul);
+    color: var(--color-letra-2);
+    font-size: 16px;
+    height: 3.5rem;
+    margin: 1rem 0 1rem 0;    
+    max-width: 500px;
+    padding-left: 10px;
+    outline: none;    
+    width: auto;
+}
+
+.contacto-form__text-info:focus {    
+    transition-duration: 500ms;    
+    border-bottom: 2px solid var(--color-background-azul);
+}
+
+.contacto-form__text-info::placeholder {
+    color: var(--color-letra-2);
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.contacto-form__btnEnviar {    
+    border: none;
+    background-color: var(--color-background-azul);
+    color: #fdfdfd;
+    font-size: 16px;
+    height: 2.5rem;
+    width: 150px;
+}
+
+@media screen and (min-width: 768px) {        
+
+    .contacto {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contacto-tienda {
+        width: 35%;
+    }
+
+    .contacto-form {
+        width: 64%;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .contacto-tienda {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contacto-tienda {
+        width: 45%;
+    }
+
+    .contacto-form {
+        width: 45%;
+    }
 }
