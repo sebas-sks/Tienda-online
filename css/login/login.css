@@ -1,0 +1,76 @@
+body {
+    background-color: #fdfdfd;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-background-gris-2);
+}
+
+.login__fomulario-login {    
+    display: flex;
+    margin: 40px auto;
+    flex-direction: column; 
+    align-items: center;       
+    width: 70%;
+}
+
+.login__formulario-titulo {
+    color: var(--color-titulos);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.login__formulario-datos {
+    border: none;
+    background-color: #fdfdfd;
+    color: var(--color-letra-3);
+    font-size: 16px;
+    height: 40px;
+    margin: .5rem 0;
+    padding: 0 5px;
+    outline: none;
+    width: 100%;
+}
+
+.login__formulario-datos:focus {
+    border-bottom: 1px solid var(--color-letra-3);
+    transition-duration: 400ms;    
+}
+
+.login__formulario-datos::placeholder {
+    padding: 0 5px;
+}
+
+.login__formulario-boton {    
+    background-color: var(--color-background-azul);
+    border: none;
+    color: #fdfdfd;    
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0 0 0;
+    height: 40px;
+    width: 150px;
+}
+
+.login__formulario-boton:hover {
+    height: 45px;
+    transition-duration: 500ms;
+    width: 160px;    
+}
+
+@media screen and (min-width: 768px) {
+    .login__fomulario-login {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .login__fomulario-login {
+        width: 30%;
+    }
+}

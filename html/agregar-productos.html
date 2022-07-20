@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bases.css">
+        <link rel="stylesheet" href="../css/menu/menu.css">        
+        <link rel="stylesheet" href="../css/menu-administrador/menu-administrador.css">
+        <link rel="stylesheet" href="../css/contendor/contenedor_contacto.css">
+        <link rel="stylesheet" href="../css/contendor/footer.css">
+        <title>Agregar nuevo producto - Administrador</title>
+    </head>
+    <body>
+        <header class="menu">
+            <img src="../assets/img/Logo.svg" alt="" class="menu__logo">                        
+            <div class="menu__busqueda">    
+                <a href="html/login.html"><button class="menu__boton-administrador">Menú Administrador</button></a>                            
+                <input type="text" class="menu__buscador" hidden placeholder="¿Qué deseas buscar?  	       &#128269;">
+                <a href="#" class="menu__lupa"><i class="fa fa-search fa-lg" aria-hidden="true"></i></a>                
+            </div>                        
+        </header>
+        <main class="container">
+            <section class="producto">
+                <div class="productos">
+                    <h1 class="productos__titulo">Agrega nuevo producto</h1>
+                    <form action="" class="productos__form-agregar-producto">
+                        <input type="text" class="productos__info-producto" placeholder="URL de la imagen">
+                        <input type="text" class="productos__info-producto" placeholder="Categoría">
+                        <input type="text" class="productos__info-producto" placeholder="URL de la imagen">
+                        <input type="text" class="productos__info-producto" placeholder="Precio del producto">
+                        <textarea name="" id="" cols="30" rows="10" class="productos__info-descripcion" placeholder="Descripción del producto"></textarea>
+                        <button class="productos__boton-agregar">Agregar productos</button>
+                    </form>
+                </div>
+            </section>
+            <section class="contacto">
+                <div class="contacto-tienda">
+                    <a href="#"><img src="../assets/img/Logo.png" alt="" class="contacto-tienda__logo"></a>
+                    <ul class="contacto-tienda__list">
+                        <li class="contacto-tienda__list-item"><a href="#" class="contacto-tienda__list-item-link">Quienes somos</a></li>
+                        <li class="contacto-tienda__list-item"><a href="#" class="contacto-tienda__list-item-link">Política de privacidad</a></li>
+                        <li class="contacto-tienda__list-item"><a href="#" class="contacto-tienda__list-item-link">Programa de fidelidad</a></li>
+                        <li class="contacto-tienda__list-item"><a href="#" class="contacto-tienda__list-item-link">Nuestras tiendas</a></li>
+                        <li class="contacto-tienda__list-item"><a href="#" class="contacto-tienda__list-item-link">Quiero ser franquiciado</a></li>
+                        <li class="contacto-tienda__list-item"><a href="#" class="contacto-tienda__list-item-link">Anúncie Aquí</a></li>
+                    </ul>
+                </div>
+                <div class="contacto-form">
+                    <form action="" class="contacto-form__formulario">
+                        <h2 class="contacto-form__titulo">Hable con nosotros</h2>                    
+                        <input type="text" class="contacto-form__text-info" placeholder="Nombre">                        
+                        <input type="text" class="contacto-form__text-info" placeholder="Escribe tu mensaje">
+                        <input type="submit" class="contacto-form__btnEnviar" value="Enviar Mensaje">
+                    </form>
+                </div>
+            </section>
+            <section class="footer">
+                <div class="footer__rodape">
+                    <div class="footer__redes">
+                        <li class="items"><a href="https://github.com/sebas-sks"><i class='fa fa-github'></i></a></li>
+                        <li class="items"><a href="https://www.linkedin.com/in/sebastian-velaco-5977691b1/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </div>     
+                    <div class="footer__info">
+                        <p>Desarrollado por Sebastian Velasco</p>
+                        <p>2022</p>
+                    </div>                           
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

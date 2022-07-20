@@ -1,0 +1,105 @@
+.menu__boton-administrador {
+    background-color: #fdfdfd;
+    border: 1px solid #2A7AE4;
+    font-weight: 600;
+    height: 2.5rem;
+    color: #2A7AE4;        
+    width: 160px;
+}
+
+.menu__lupa {
+    color: #565454;
+}
+
+.producto {
+    background-color: var(--color-background-gris-2);    
+    width: 100%;
+    padding: 1rem 0; 
+}
+
+.productos {                   
+    margin: 0 auto;
+    justify-content: space-around;  
+    width: 90%;     
+}
+
+.productos__titulo {
+    color: var(--color-titulos);
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.productos__form-agregar-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.productos__info-producto {
+    border: none;            
+    border-bottom: 1px solid var(--color-letra-3);    
+    color: var(--color-letra-3);
+    font-size: 16px;
+    height: 60px;
+    margin: 10px 0;
+    padding: 0 10px;    
+    outline: none;
+}
+
+.productos__info-producto::placeholder {
+    position: absolute;
+    color: var(--color-letra-2);
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.productos__info-producto:focus {
+    transition-duration: 500ms;
+    border-bottom: 2px solid var(--color-letra-3);
+}
+
+.productos__info-descripcion {
+    border: none;        
+    border-bottom: 1px solid var(--color-letra-3);
+    color: var(--color-letra-3);
+    font-size: 18px;
+    height: 80px;
+    margin: 10px 0;
+    padding: 5px 10px;    
+    outline: none;    
+}
+
+.productos__info-descripcion::placeholder {
+    position: absolute;
+    color: var(--color-letra-2);
+    font-family: var(--tipo-letra);
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.productos__info-descripcion:hover {
+    transition-duration: 500ms;
+    border-bottom: 2px solid var(--color-letra-3);
+}
+
+.productos__boton-agregar {
+    background-color: var(--color-background-azul);
+    border: none;
+    color: #fdfdfd;    
+    font-size: 15px;
+    height: 50px;
+}
+
+@media screen and (min-width:1200px) {
+    .productos {
+        width: 40%;
+    }
+}
+
