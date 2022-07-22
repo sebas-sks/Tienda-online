@@ -1,0 +1,112 @@
+body {
+    background-color: var(--color-background-gris-2);
+}
+
+.productos {  
+    display: flex;         
+    width: 100%;    
+}
+
+.contenedor__lista-productos {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+    width: 100%;
+}
+
+.productos__consolidado {
+    margin: 1rem 0 1rem 0;
+    display: flex;    
+    flex-wrap: wrap;    
+    align-items: center;
+    width: 100%;
+}
+
+.productos__agregar-boton {
+    background-color: var(--color-background-azul);
+    border: 0;    
+    color: #fdfdfd;
+    font-size: 15px;
+    margin: 12px 0 0 0;
+    height: 40px;
+    width: 170px;
+}
+
+.contenedor__producto-item {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: flex-start;
+    margin: .75rem 0;
+    position: relative;
+    line-height: 1.5rem;
+    width: 46%;    
+}
+
+.productos-item__codigo-producto {
+    color: var(--color-letra-3);
+    font-size: 14px;
+}
+
+.productos-item__img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.productos__acciones {
+    display: flex;
+    width: 100%;        
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+}
+
+.productos-acciones-item {
+    margin: 0 5px;    
+}
+
+.productos-acciones-item a {
+    text-decoration: none;
+    color: #fdfdfd;
+}
+
+@media screen and (min-width: 450px) {
+    .productos__consolidado {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 768px) {        
+
+    .contenedor__lista-productos {
+        justify-content: space-around;
+    }
+
+    .contenedor__producto-item {
+        width: 24%;
+    }
+
+    .productos__agregar-boton {
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .productos {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .contenedor__lista-productos {
+        justify-content: space-between;
+    }
+
+    .contenedor__producto-item {
+        width: 15%;
+    }
+}
